@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://kit.fontawesome.com/52244c391d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <div class="container">
+            <span id="ham-btn">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="img/logo.jpg" alt="" id="logo">
+            <nav class="menu">
+                <span class="nave"><i class="fas fa-home"></i> <a href="#home">home</a>
+                    <div class="line"></div>
+                </span>
+                <span class="nave"><i class="fas fa-book"></i> <a href="#blog">blog</a>
+                    <div class="line"></div>
+                </span>
+                <span class="nave"><i class="fas fa-chalkboard-teacher"> </i><a href="#services">services</a>
+                    <div class="line"></div>
+                </span>
+                <span class="nave"><i class="fas fa-user"> </i><a href="#about">about</a>
+                    <div class="line"></div>
+                </span>
+                <span class="nave"><i class="fas fa-phone-alt"> </i> <a href="#contact">contact</a>
+                    <div class="line"></div>
+                </span>
+            </nav>
+            <span>
+                <input type="checkbox" name="" id="search-btn-control">
+                <label for="search-btn-control">
+                    <input type="search" name="" id="search">
+                    <i class="fas fa-search"></i>
+                </label>
+            </span>
+        </div>
+
+    </section>
+    <section class="home" id="home">
+        <div class="intro-text">
+            <!-- <img class="centerimg" src="computer4.jpg" alt=""> -->
+
+            <h1>
+                WELCOME TO CODE KEY
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
+                repudiandae. Fugit, dolores maiores voluptatibus enim, aspernatur nisi
+                excepturi non, distinctio minus consectetur sequi. Dolores a quis distinctio
+                debitis tempore quas, esse fuga quibusdam quia? Rem.
+            </p>
+            <input type="button" value="learn more" id="learnbtn">
+        </div>
+
+    </section>
+
+    <section class="blog" id="blog">
+        <h1 id="latest">
+            OUR LATEST POSTS
+            <hr>
+        </h1>
+        <div class="boxes posts">
+            <p>
+                <img src="img/cuterobo.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe accusamus tempora quos soluta, voluptates, minus maiores
+                architecto nemo quam ipsa labore ea. Porro aliquam,
+                <input type="button" value="READ MORE" class="readbtn">
+            </p>
+
+        </div>
+        <div class="boxes posts">
+            <p>
+                <img src="img/computer3.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe accusamus tempora quos soluta, voluptates, minus maiores
+                architecto nemo quam ipsa labore ea. Porro aliquam,
+                <input type="button" value="READ MORE" class="readbtn">
+            </p>
+        </div>
+        <div class="boxes posts">
+            <p>
+                <img src="img/mobile.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe accusamus tempora quos soluta, voluptates, minus maiores
+                architecto nemo quam ipsa labore ea. Porro aliquam,
+                <input type="button" value="READ MORE" class="readbtn">
+            </p>
+        </div>
+        <div class="boxes posts">
+            <p>
+                <img src="img/game.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe accusamus tempora quos soluta, voluptates, minus maiores
+                architecto nemo quam ipsa labore ea. Porro aliquam,
+                <input type="button" value="READ MORE" class="readbtn">
+            </p>
+        </div>
+        <div class="boxes posts">
+            <p>
+                <img src="img/datacenter.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Saepe accusamus tempora quos soluta, voluptates, minus maiores
+                architecto nemo quam ipsa labore ea. Porro aliquam,
+                <input type="button" value="READ MORE" class="readbtn">
+            </p>
+        </div>
+
+    </section>
+    <hr>
+    <section class="services" id="services">
+        <h1 id="offer">
+            COURCES WE OFFER
+            <hr>
+        </h1>
+        <div class="boxes cources">
+            <p>
+                <img src="img/html.jpg" alt="">
+                BECOME MASTER IN WEB-DEVELOPMENT
+                WITH HTML
+                <input type="button" value="Purchase now $" class="purchasebtn">
+            </p>
+        </div>
+        <div class="boxes cources">
+            <p>
+                <img src="img/css.jpg" alt="">
+                GIVE STYLE AND RESPONSIVENESS TO YOUR WEBSITE WITH CSS
+                <input type="button" value="Purchase now $" class="purchasebtn">
+            </p>
+        </div>
+        <div class="boxes cources">
+            <p>
+                <img src="img/js.jpg" alt="">
+                GIVE BRAIN TO YOUR WEBSITE
+                WITH JAVASCRIPT
+                <input type="button" value="Purchase now $" class="purchasebtn">
+            </p>
+        </div>
+
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+
+        <h1 id="contact">CONTACT US</h1>
+        <div class="form-bg">
+
+            <form action="submit" class="contact-form">
+                <input type="text" name="" id="fname" placeholder="First Name" class="forme">
+                <input type="text" name="" id="lname" placeholder="Last Name" class="forme">
+                <input type="email" name="" id="email" placeholder="Email" class="forme">
+                <input type="number" name="" id="phone" placeholder="Phone" class="forme">
+                <textarea name="" id="msg" placeholder="Message" class="forme"></textarea>
+                <input type="button" value="SEND" class="forme" id="sendbtn">
+            </form>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h3>
+            <i class="far fa-copyright"></i>
+            2021 codekey. all rights reserved.Cookie policy, Privacy and Terms.
+        </h3>
+    </section>
+    <!-- <input type="button" value="top" class="fas fa-arrow-up" id="scrollbtn"> -->
+    <button id="scrollbtn"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/logic.js">
+    </script>
+   
+
+</body>
+
+</html>

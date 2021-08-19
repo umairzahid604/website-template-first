@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue";
+   
+
+}
+html{
+scroll-behavior: smooth;
+font-size: 62.5%;
+width: 100vw;
+height: 100vh;
+
+}
+
+
+/* navbar styling */
+.fa-bars{
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(3,34,46);
+}
+.menu{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+#logo{
+    height: 5rem;
+    margin: 4px 0 ;
+    border-radius: 100%;
+    
+}
+.nave{
+    margin: 0 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s;
+}
+a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+.nave:hover{
+    letter-spacing: .2rem;
+    transition: all 1s;
+}
+.line{
+    width: 0%;
+    height: .12rem;
+    background-color: white;
+    transition: all 1s;
+}
+.nave:hover .line{
+    width: 100%;
+}
+#search{
+    width: 0px;
+    outline: none;
+    transition: all 1s;
+}
+#search-btn-control{
+    display: none;
+}
+.fa-search{
+    font-size: medium;
+    cursor: pointer;
+}
+#search-btn-control:checked + label > #search{
+    width: 15rem;
+}
+
+
+/* section 2 home */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+    text-align: center;
+    font-size: 2rem;
+    color:black;
+    letter-spacing: normal;
+    transition: all 1s;
+    background: url("../img/computer4.jpg");
+    background-size: 100% 100%;
+    background-position: cover;
+}
+.intro-text{
+    width: 80%;
+    
+}
+#learnbtn{
+    margin-top: 2rem;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+#learnbtn:hover{
+    background-color: white;
+    color: black;
+    width: 14rem;
+}
+/* section 3 center */
+
+#latest,#offer,#contact{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+
+.blog{
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: black;
+    margin-top: 3%;
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    /* min-height: 50%; */
+    /* background-color: ; */
+    padding: 0% 2%; 
+    /* border: 2px solid red;   */
+    /* background-color: black; */
+    
+}
+.posts{
+    
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    border: 1px solid black;
+    width: 30%;
+    margin: 2rem .5rem;
+    padding: 0px .2rem;
+    flex-basis: 45%;
+    flex-grow : .3;
+    transition: all 1s;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+/* .center:nth-child(4){
+    width: 100%;
+} */
+.boxes >p> img{
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.posts>p>img{
+    transition: all 1s;
+}
+.posts>p>img:hover{
+    /* content: ""; */
+    opacity: .1;
+    cursor: pointer;
+    padding: 2rem;
+    transition: 1s;
+}
+.readbtn{
+    display: inline-block;
+    /* margin-left: 2rem; */
+    width: 12rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.readbtn:hover{
+    background-color: black;
+    color: rgb(223, 185, 16);
+    width: 14rem;
+}
+/* section 4 services */
+.services{
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 3%;
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    /* background:linear-gradient(white,black); */
+    background-color: black; 
+    padding: 0% 2%; 
+    /* height: 500px; */
+    width: 100%;
+    /* overflow: hidden; */
+    
+}
+.cources{
+    border: 2px solid white;
+    height:auto;
+    flex-basis: 200px;
+    text-align: center;
+    /* overflow: unset; */
+}
+.cources:hover{
+    /* content: ""; */
+    /* opacity: .3; */
+    cursor: pointer;
+    margin-top: 10px;
+    /* padding: 2rem; */
+}
+.cources>p>img{
+    height: 80%;
+}
+.purchasebtn{
+    margin-left: 2rem;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+.purchasebtn:hover{
+    background-color: black;
+    color: rgb(16, 209, 223);
+    width: 14rem;
+}
+/* section 5 contact */
+.contact{
+    margin-top: 2rem;
+    background-image: url("../img/contactimg.jpg");
+    background-size: cover;
+}
+#contact{
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 7rem;
+}
+.form-bg{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+.contact-form{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* color: white; */
+    margin: 7% 0;
+    font-size: 2rem;
+    /* font-family: "Bebas Neue"; */
+    /* background:linear-gradient(white,black); */
+    background-color: #000000a6; 
+    padding: 0% 2%; 
+    /* height: 500px; */
+    /* overflow: hidden; */
+    width: 50%;
+    height: 90%;
+    /* border: 2px solid red; */
+    
+    
+}
+
+.forme{
+    width: 100%;
+    margin-top: 10px;
+    height: 10%;
+    background-color: transparent;
+    outline: none;
+    border-style: hidden;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2rem;
+    transition: all 1s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.forme:hover{
+    margin-top: 2rem;
+}
+#msg{
+    min-height: 30%;
+    max-height: 30%;
+}
+::placeholder{
+    color: white;
+    padding-left:.3rem ;
+}
+#sendbtn{
+    width: 50%;
+    height: 7%;
+    margin-top: 2rem;
+    border-style:groove;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+#sendbtn:hover{
+    width: 60%;
+    letter-spacing: 1rem;
+    background-color: rgba(3,4,5,5);
+}
+/* section 6 about */
+.about{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+    height: 5rem;
+    letter-spacing: 2px;
+}
+#scrollbtn{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 0px;
+    left: 95%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .3s;
+}
+#scrollbtn:hover{
+    transform: rotate(360deg);
+}
+
+
+@media screen and (max-width:1020px){
+    *{transition: all 1s;}
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        background-color: #0e2a35;
+        justify-content: unset;
+        width: 100vw;
+        height: 51rem;
+        top: 5.6rem;
+        left: -110%;
+        transition: left 1s;
+    }
+    .show{
+        left: 0%;
+    }
+    .nave{
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    .fa-bars{
+        display: inline-block;
+        font-size: x-large;
+    }
+    .center{
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: unset;
+    }
+    .cources>p>img{
+        height: 70%;
+    }
+}
