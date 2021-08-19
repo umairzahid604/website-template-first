@@ -1,10 +1,8 @@
 let scrollbtn = document.getElementById("scrollbtn")
 window.onscroll = function () { btntoggle() }
 function btntoggle() {
-    console.log("hello")
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         scrollbtn.style.display = "block"
-        console.log(document.body.scrollTop)
     }
     else {
         scrollbtn.style.display = "none"
@@ -16,12 +14,10 @@ function scrolltop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-// console.log(document.documentElement.scrollTop)
 
 
 
 // hambtn
-console.log("checking");
 let hambtn = document.getElementById("ham-btn");
 hambtn.addEventListener("click", () => {
     let introtxt = document.querySelector(".intro-text");
