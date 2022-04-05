@@ -17,7 +17,7 @@ function scrolltop() {
 
 
 
-// hambtn
+// hambtn hello
 let hambtn = document.getElementById("ham-btn");
 hambtn.addEventListener("click", () => {
     let introtxt = document.querySelector(".intro-text");
